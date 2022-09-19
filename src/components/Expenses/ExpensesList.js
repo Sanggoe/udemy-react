@@ -1,5 +1,5 @@
 import React from "react";
-import ExpensItem from "./ExpenseItem";
+import ExpenseItem from "./ExpenseItem";
 import "./ExpensesList.css";
 
 const ExpensesList = (props) => {
@@ -7,10 +7,13 @@ const ExpensesList = (props) => {
     return <h2 className="expenses-list__fallback">Found No Expenses.</h2>;
   }
 
+  console.log("ExpensesList");
+  console.log(props);
+
   return (
     <ul className="expenses-list">
       {props.items.map((expense) => (
-        <ExpensItem
+        <ExpenseItem
           key={expense.id}
           title={expense.title}
           amount={expense.amount}

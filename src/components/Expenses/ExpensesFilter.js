@@ -5,7 +5,7 @@ import './ExpensesFilter.css';
 const ExpensesFilter = (props) => {
   
     const dropdownChangeHandler = (e) => {
-        props.onSaveYear(e.target.value)
+        props.onChangeFilter(e.target.value)
     }
   
     return (

@@ -4,7 +4,9 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
-const ExpensItem = (props) => {
+const ExpenseItem = (props) => {
+  console.log(props);
+
   return (
     <li>
       <Card className="expense-item">
@@ -18,4 +20,4 @@ const ExpensItem = (props) => {
   );
 };
 
-export default ExpensItem;
+export default ExpenseItem;
